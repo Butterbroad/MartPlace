@@ -1,13 +1,15 @@
 $(function(){
 
-    $(".class").rateYo({
-        rating: 5,
+    $(".rateYo").rateYo({
+        rating: 4.5,
         starWidth: "12px",
         readOnly: true
       });
 
-    $('.class').slick({
-        
+    $('.product-slider__inner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
     });
 
 
