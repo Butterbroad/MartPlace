@@ -11,6 +11,14 @@ $(function(){
         slidesToScroll: 1,
         dots: false,
     });
+    
+    $('.slider__feed-inner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        variableWidth: true,
+    });
 
 
     var mixer = mixitup('.class');
