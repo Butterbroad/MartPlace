@@ -21,7 +21,7 @@ $(function(){
     });
 
 
-    var mixer = mixitup('.class');
+    let mixer = mixitup('.release-products__inner-box');
 
     
 });

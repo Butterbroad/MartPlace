@@ -266,6 +266,7 @@
     &-text {
         line-height: 32px;
         padding: 0 20px;
+        line-height: 30px;
     }
 }
  // end advantages
@@ -302,6 +303,9 @@
             margin-bottom : 15px;
             margin-top: 50px;
          }
+     }
+     &-text {
+        line-height: 30px;
      }
      &-user {
          display: flex;
@@ -601,6 +605,7 @@
 .products__item-text {
     padding: 28px 40px 35px 30px;
     border-bottom: 1px solid #ececec;
+    line-height: 30px;
 }
 .release-products__item {
     .slider__item-about {
@@ -644,6 +649,9 @@
     border-radius: 30px;
     padding: 20px 30px;
     margin-top: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 //  end release-products
 
@@ -708,3 +716,194 @@
     }
 }
 //  end achievements
+
+//  start about
+.about {
+    padding: 120px 0;
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.about__item {
+    max-width: 361px;
+    background-color: #fff;
+    text-align: center;
+    color: #555555;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    padding: 55px 35px 65px;
+    position: relative;
+    margin-bottom: 30px;
+    span {
+        font-size: 48px;
+        color: #5c87f8;
+        opacity: 0.2;
+        left: 15px;
+        top: 9px;
+        position: absolute;
+        @include f300;
+    }
+    &-icon {
+        font-size: 60px;
+        margin-bottom: 35px;
+    }
+    &-title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 25px;
+    }
+    &-text {
+        line-height: 30px;
+    }
+    .icon-id-card-o {
+        color: $btn;
+    }
+    .icon-magic {
+        color: $cherry;
+    }
+    .icon-lock1 {
+        color: #77de51;
+    }
+    .icon-bar-chart {
+        color: #feb71d;
+    }
+    .icon-leaf {
+        color: #58c9e9;
+    }
+    .icon-phone {
+        color: #ff6a6d;
+    }
+}
+.about__title,
+.feedbacks__title {
+    font-size: 36px;
+    color: #000;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    span {
+        color: $btn;
+        margin-left: 10px;
+    }
+}
+.about__text,
+.feedbacks__text {
+    max-width: 675px;
+    margin: 0 auto;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 60px;
+}
+//  end about
+
+//  start offers
+.offers {
+    &__wrapper {
+        display: flex;
+    }
+    &__item {
+        max-width: 50%;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+    }
+    &__icon {
+        margin-bottom: 45px;
+    }
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: #fff;
+        line-height: 30px;
+        margin-bottom: 45px;
+        padding: 0 15px;
+    }
+    &__link {
+        color: $btn;
+        background-color: #fff;
+        border-radius: 30px;
+        max-width: 190px;
+        padding: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    .shopping-link {
+        color: $cherry;
+    }
+}
+//  end offers
+  
+
+// start feedbacks
+.feedbacks {
+    padding: 120px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        padding: 50px 40px;
+        max-width: 555px;
+        border-left: 2px solid $btn;
+        margin-bottom: 30px;
+        position: relative;
+        color: #555;
+        span {
+            &::before {
+            position: absolute;
+            font-size: 60px;
+            color: #e8e8e8;
+            top: 50px;
+            right: 40px;
+            }
+        }
+    }
+    &__item-text {
+        line-height: 30px;
+    }
+}
+.feedbacks__user-box {
+    display: flex;
+    align-items: center;
+    max-width: 410px;
+    margin-bottom: 25px;
+}
+.feedbacks__user-image {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}
+.feedbacks__user-name {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.feedbacks__user-speciality {
+    display: block;
+
+}
+.feedbacks__btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 190px;
+    background-color: $btn;
+    color: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+// end feedbacks
+  
