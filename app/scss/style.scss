@@ -43,6 +43,11 @@
         padding: 4px 17px;
         margin-right: 50px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        transition: all .3s;
+        &:hover {
+            background-color: #fff;
+            color: $btn;
+        }
     }
     &-image {
         width: 50px;
@@ -59,6 +64,7 @@
         }
     }
     &-bell {
+
         &::before {
             content: '\f0a2';
             margin-right: 30px;
@@ -77,10 +83,42 @@
         }
     }
 }
+.header__top-content-bell {
+    span {
+        background-color: #ff6a6c;
+    }
+}
+.header__top-content-mail {
+    span {
+        background-color: #62d03b;
+    }
+}
+.header__top-content-basket {
+    span {
+        background-color: $btn;
+    }
+}
+
 .header-icons {
     font-family: 'icomoon';
     color: #7e8fa1;
     font-size: 20px;
+    position: relative;
+    span {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        top: -20px;
+        left: 14px;
+        text-align: center;
+        font-size: 14px;
+        @include f500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
 }
 .header__menu-inner {
     display: flex;
@@ -102,6 +140,10 @@
         color: #333;
         text-transform: uppercase;
         @include f700;
+        transition: all .3s;
+        &:hover {
+            color: $btn;
+        }
     }
 }
 .header__menu-inner {
@@ -132,6 +174,9 @@
                 font-family: 'icomoon';
                 color: #fff;
                 font-size: 15px;
+            }
+            &:hover {
+                background-color: #0766cc;
             }
         }
     }
@@ -250,6 +295,12 @@
 .advantages__item {
     max-width: 360px;
     text-align: center;
+    padding: 15px;
+    transition: all .3s;
+    &:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.2);
+        background-color: rgb(194, 218, 253);
+    }
     &-image {
         width: 112px;
         height: 112px;
@@ -498,6 +549,7 @@
         font-size: 15px;
         cursor: pointer;
         outline: none;
+        transition: all .3s;
         & + button {
             margin-left: 10px;
         }
@@ -652,6 +704,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: #fff;
+        color: $btn;
+    }
 }
 //  end release-products
 
@@ -715,6 +772,13 @@
         color: #fff;
     }
 }
+.achievements__item {
+    padding: 15px;
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0px 4px 60px 0px rgba(255, 255, 255, 0.1);
+    }
+}
 //  end achievements
 
 //  start about
@@ -736,6 +800,11 @@
     padding: 55px 35px 65px;
     position: relative;
     margin-bottom: 30px;
+    transition: all .3s;
+    &:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.2);
+        background-color: rgb(194, 218, 253);
+    }
     span {
         font-size: 48px;
         color: #5c87f8;
@@ -839,6 +908,17 @@
     }
     .shopping-link {
         color: $cherry;
+        &:hover {
+            color: #fff;
+            background-color: $cherry;
+        }
+    }
+}
+.offers__link {
+    transition: all .3s;
+    &:hover {
+        background-color: $btn;
+        color: #fff;
     }
 }
 //  end offers
@@ -907,6 +987,11 @@
     border-radius: 30px;
     padding: 20px 30px;
     margin-top: 30px;
+    transition: all .3s;
+    &:hover {
+        color: $btn;
+        background-color: #fff;
+    }
 }
 // end feedbacks
 
@@ -920,7 +1005,9 @@
     }
     .products__item-title {
         width: 100%;
-        padding: 30px 40px 25px 30px;
+        font-size: 22px;
+        @include f700;
+        padding: 20px 30px;
     }
     .products__item-text {
         padding: 0 30px 30px;
@@ -934,6 +1021,7 @@
     }
     .news__date {
         max-width: 180px;
+        color: #999;
         width: 100%;
         height: 40px;
         align-items: center;
@@ -967,6 +1055,10 @@
         padding-left: 25px;
         color: #999;
         position: relative;
+        transition: all .3s;
+        &:hover::before {
+            color: $btn;
+        }
         &::before {
             content: "\f0e5";
             font-family: 'icomoon';
@@ -986,4 +1078,41 @@
     }
 }
 // end news
+
+// start guarantees
+.guarantees__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.guarantees__item {
+    max-width: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+    & + & {
+        border-left: 1px solid #e8eaf3;
+    }
+}
+.guarantees__img {
+    width: 150px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.guarantees__title {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    font-size: 24px;
+    span {
+        color: $btn;
+    }
+}
+.guarantees__title-support {
+    span {
+        color: $cherry;
+    }
+}
+// end guarantees
   
